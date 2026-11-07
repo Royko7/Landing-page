@@ -58,8 +58,3 @@ npm start
 | `npm start`      | Start the development server    |
 | `npm run build`  | Create a production build       |
 | `npm run lint`   | Run the linters                 |
-| `npm run deploy` | Publish the site to GitHub Pages |
-
-## License
-
-Distributed under the GPL-3.0 license. See [LICENSE](LICENSE).
