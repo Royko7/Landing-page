@@ -103,7 +103,7 @@
   &__explore {
     display: grid;
     background-color: $page-white-color;
-    width: 278px;
+    width: min(278px, 100vw - $page-gutters);
     text-align: center;
     align-items: center;
     justify-content: center;

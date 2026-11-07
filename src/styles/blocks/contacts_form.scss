@@ -47,7 +47,7 @@
     background-color: $page-white-color;
     border-radius: 40px;
     height: 48px;
-    width: 278px;
+    width: min(278px, 100vw - $page-gutters);
     margin-bottom: 16px;
     border: 0;
     box-sizing: border-box;
@@ -64,6 +64,10 @@
     }
   }
 
+  &__input:user-invalid {
+    outline: 2px solid $error-color;
+  }
+
   &__input::placeholder {
     font-family: $font-family;
     font-weight: $font-weight-medium;
@@ -73,17 +77,14 @@
   }
 
   &__input--textarea {
-    width: 278px;
     height: 148px;
     border-radius: 16px;
-
-    @include desktop {
-      width: 411px;
-    }
   }
 
   &__input--submit {
     margin-top: 16px;
+    padding-block: 0;
+    cursor: pointer;
     font-family: $font-family;
     font-weight: $font-weight-big;
     font-size: 16px;
@@ -114,7 +115,7 @@
 
     @include desktop {
       align-items: center;
-      gap: 200px;
+      gap: 96px;
     }
   }
 

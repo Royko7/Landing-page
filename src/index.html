@@ -323,18 +323,25 @@
               name="contactsName"
               placeholder="Name"
               class="contacts__input"
+              minlength="2"
+              required
             />
             <input
               type="email"
               name="contactsEmail"
               placeholder="Email"
               class="contacts__input"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+              title="Enter an email like name@example.com"
+              required
             />
             <textarea
               name="contactsTextarea"
               class="contacts__input contacts__input--textarea"
               id="contacts-textarea"
               placeholder="Message"
+              minlength="10"
+              required
             ></textarea>
             <input
               type="submit"

@@ -67,7 +67,7 @@
   }
 
   @include desktop {
-    padding-inline: 80px;
+    padding-inline: 40px;
   }
 
   &_title {
@@ -104,7 +104,7 @@
   }
 
   &__item {
-    width: 280px;
+    width: min(280px, 100vw - $page-gutters);
     margin-top: 42px;
   }
 
